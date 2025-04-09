@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Static TOTP</title>
+</head>
+
+<body>
+  <div id="app">
+    <h1>Static TOTP</h1>
+    <h6>You know, those 6 numbers you need to use for 2fa.</h6>
+    <video id="video" style="width:640px;display:none;" autoplay webkit-playsinline playsinline>Waiting for
+      camera</video>
+    <ul>
+      <li>Hate the pressure of having only 30 seconds to enter your TOTP code?</li>
+      <li>Want to use TOTP but don't want to install an app?</li>
+      <li>Want to throw away your phone but also need to use TOTP?</li>
+      <li>Like to read numbers that appear to be random in a book?</li>
+    </ul>
+    <div>If any of the above is true, this is for you.</div>
+    <h3>How does it work?</h3>
+    <ul>
+      <li>Scan the QR code, either via camera or by loading it.</li>
+      <li>Get an ebook (epub) containing all of your codes for the next month.</li>
+      <li>Read it? No idea honestly</li>
+    </ul>
+    <button id="take-pic-btn">Use the camera</button>
+    <button id="load-img-btn">Load an image</button>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
